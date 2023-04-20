@@ -384,21 +384,21 @@ img{
 
 /* tactics */
 
-.tactics {
+.advantage {
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
-.tactics-list {
+.advantage-list {
     display: flex;
     gap: 24px;
 }
 
-.tactics-content .item {
+.advantage-content .item {
     width: calc((100% - 72px) / 4);
 }
 
-.tactics-title {
+.advantage-title {
     color: var(--primary-text-color);
     
     font-weight: 500;
@@ -409,11 +409,11 @@ img{
     margin-bottom: 8px;
 }
 
-.tactics-text {
+.advantage-text {
     width: 264px;
 } 
 
-.icon-tactics {
+.icon-advantage {
     background-color: var(--gray-color);
 
     display: flex;
