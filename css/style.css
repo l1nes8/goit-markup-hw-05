@@ -18,9 +18,11 @@ body {
     text-decoration: none;
     padding-top: 24px;
     padding-bottom: 24px;
+
+    transition: color var(--hover-animation);
 }
 
- .link:hover, .link:focus {
+.link:hover, .link:focus {
     color: #404bbf;
 }
 
@@ -28,11 +30,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #4D5AE5;
     
+    transition: background-color var(--hover-animation);
+
     width: 40px;
     height: 40px;
     border-radius: 50%;
+
+    background-color: #4D5AE5;
 }
 
 .link-sm:hover, 
@@ -89,6 +94,10 @@ img{
     --white-color: #FFFFFF;
     --gray-color: #F4F4FD;
     --clients-color: #8e8f99;
+
+    --modal-animation: 1s cubic-bezier(0.18, 0.9, 0.32, 1.28); 
+    --hover-animation: 400ms ease-in-out;
+    --text-animation: 800ms ease;
 }
 
  /* logo */
@@ -215,6 +224,9 @@ img{
     
     width: 40px;
     height: 40px;
+
+    transition: background-color var(--hover-animation);
+
     border-radius: 50%;
 }
 
@@ -340,6 +352,7 @@ img{
 
 .is-hidden {
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
 }
 
@@ -555,8 +568,9 @@ img{
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    
    
+    transition: color var(--hover-animation);
+
     width: 168px;
     height: 88px;
 
@@ -616,6 +630,8 @@ img{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+
+    transition: color var(--hover-animation),  background-color var(--hover-animation);
 
     padding-top: 12px;
     padding-bottom: 12px;
@@ -694,7 +710,7 @@ img{
     position: absolute;
     
     transform: translateY(100%);
-    transition: 500ms ease;
+    transition: var(--text-animation);
     
     top: 0;
     left: 0;
