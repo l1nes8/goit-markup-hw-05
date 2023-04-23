@@ -55,7 +55,7 @@ body {
 
 .list a {
     color: var(--primary-text-color);
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -152,7 +152,7 @@ img{
     content: '';
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
 
     width: 100%;
@@ -575,7 +575,7 @@ img{
     justify-content: center;
     text-decoration: none;
    
-    transition: color var(--hover-animation);
+    transition: color var(--hover-animation), border-color var(--hover-animation) ;
 
     width: 168px;
     height: 88px;
@@ -637,7 +637,7 @@ img{
     line-height: 1.5;
     letter-spacing: 0.04em;
 
-    transition: color var(--hover-animation),  background-color var(--hover-animation);
+    transition: color var(--hover-animation),  background-color var(--hover-animation), border var(--hover-animation), box-shadow var(--hover-animation) ;
 
     padding-top: 12px;
     padding-bottom: 12px;
@@ -669,11 +669,10 @@ img{
 
 .portfolio-link-photo {
     display: block;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    
 }
 
- .portfolio-link-photo:hover, .portfolio-link-photo:focus {
+.portfolio-link-photo:hover, .portfolio-link-photo:focus {
     box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 
     0px 1px 1px rgba(46, 47, 66, 0.16), 
     0px 2px 1px rgba(46, 47, 66, 0.08);
