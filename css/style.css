@@ -730,8 +730,8 @@ img{
     background-color: var(--background-color-button);
 }
 
-.list-img .item:hover .overlay,
-.list-img .item:focus .overlay {
+.portfolio-link-photo:hover .overlay,
+.portfolio-link-photo:focus .overlay {
     transform: translateY(0);
 }
 
